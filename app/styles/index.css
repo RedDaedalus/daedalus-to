@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.notif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.notif .heading {
+    text-align: center;
+}
+
+a,
+a:visited {
+    color: #4c92da;
+}
+
+a:hover {
+    color: #3f80c2;
+    text-decoration: none;
+    font-weight: 300;
+}
