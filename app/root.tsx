@@ -1,15 +1,12 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration
-} from "remix";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "remix";
 import type { MetaFunction } from "remix";
 
+import tailwind from "~/tailwind.css";
+
+export const links = () => [{ rel: "stylesheet", href: tailwind }];
+
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "daedalus.to" };
 };
 
 export default function App() {
@@ -21,10 +18,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-white dark:bg-dark text-black dark:text-white">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
+
+        <script src="https://kit.fontawesome.com/acf6d580bd.js" crossOrigin="anonymous"></script>
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
