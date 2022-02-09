@@ -6,7 +6,11 @@ import tailwind from "~/tailwind.css";
 export const links = () => [{ rel: "stylesheet", href: tailwind }];
 
 export const meta: MetaFunction = () => {
-  return { title: "daedalus.to" };
+  return {
+    title: "daedalus.to",
+    "og:title": "daedalus.to",
+    "theme-color": "#f43f5e"
+  }
 };
 
 export default function App() {
