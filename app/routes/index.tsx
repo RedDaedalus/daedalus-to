@@ -14,7 +14,7 @@ export default function Index() {
 
     <div className="text-center text-xl flex gap-2 justify-center">
       <a className="fa fa-github transition duration-200 hover:text-rose-400" href="https://github.com/RedDaedalus" target="blank"></a>
-      <a className="fa fa-twitter transition duration-200 hover:text-rose-400" href="https://github.com/red_daedalus" target="blank"></a>
+      <a className="fa fa-twitter transition duration-200 hover:text-rose-400" href="https://twitter.com/red_daedalus" target="blank"></a>
     </div>
   </div>);
 }
